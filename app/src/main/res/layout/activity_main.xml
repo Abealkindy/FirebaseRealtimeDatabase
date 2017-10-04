@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/jarak40dp"
+    tools:context="com.rosinante24.firebaserealtimedatabase.MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/ukuran_gambar"
+        android:layout_height="@dimen/ukuran_gambar"
+        android:layout_marginBottom="@dimen/padding_edit_text"
+        android:src="@drawable/firebaseicon" />
+
+    <TextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/jarak16dp"
+        android:paddingTop="@dimen/jarak16dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize20sp" />
+
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginBottom="@dimen/padding_edit_text"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/hint_name"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:padding="@dimen/padding_edit_text"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginTop="@dimen/padding_edit_text"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="@dimen/padding_edit_text"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak16dp"
+        android:background="@drawable/ground_button"
+        android:text="@string/text_button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
