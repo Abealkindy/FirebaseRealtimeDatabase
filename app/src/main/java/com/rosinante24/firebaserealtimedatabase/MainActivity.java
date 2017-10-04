@@ -39,14 +39,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        firebasedatabase =  FirebaseDatabase.getInstance();
+        firebasedatabase = FirebaseDatabase.getInstance();
 
-        firebasedatabase.setPersistenceEnabled(true);
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 
         databasereference = firebasedatabase.getReference("users");
 
         firebasedatabase.getReference("app_title").setValue("Realtime");
-
 
 
         firebasedatabase.getReference("app_title").addValueEventListener(new ValueEventListener() {
@@ -64,8 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Gagal bro", Toast.LENGTH_SHORT).show();
             }
         });
-
-
 
 
     }
